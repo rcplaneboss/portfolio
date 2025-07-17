@@ -9,7 +9,6 @@ import SplashCursor from '@/components/ui/SplashCursor'
 const Hero = () => {
   return (
     <div className="pb-20 pt-36">
-      <SplashCursor />
       <div>
         <Spotlight
           className="-top-40 -left-10 md:-left-32 md:-top-20 h-screen"
@@ -37,6 +36,7 @@ const Hero = () => {
       </div>
 
       <div className="flex justify-center relative my-20 z-10">
+      <SplashCursor />
         <div className="max-w-[89vw] md:max-w-2xl lg:max-w-[60vw] flex flex-col items-center justify-center">
           <h2 className="uppercase tracking-widest text-xs text-center text-blue-100 max-w-80">
             Powered by Next.js. Designed for Experience.
