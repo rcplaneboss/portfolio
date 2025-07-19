@@ -55,7 +55,7 @@ export const BentoGridItem = ({
   return (
     <div
       className={cn(
-        "group/bento relative shadow-input row-span-1 overflow-hidden flex flex-col justify-between space-y-4  rounded-3xl relative bg-white transition duration-200 hover:shadow-xl border border-white/[.1]",
+        "group/bento shadow-input row-span-1 overflow-hidden flex flex-col justify-between space-y-4  rounded-3xl relative bg-white transition duration-200 hover:shadow-xl border border-white/[.1]",
         className
       )}
       style={{
@@ -90,7 +90,6 @@ export const BentoGridItem = ({
 
         {id === 6 && (
           <BackgroundGradientAnimation>
-            {/* <div className="w-full absolute z-50 flex items-center justify-center text-white font-bold" /> */}
           </BackgroundGradientAnimation> 
         )}
 
@@ -110,9 +109,9 @@ export const BentoGridItem = ({
           {id === 2 && <GridGlobe />}
 
           {id === 3 && (
-            <div className="flex gap-1 lg:gap-5 w-fit absolute -right-3  lg:-right-2 h-full">
+            <div className="flex gap-1 lg:gap-5 w-fit absolute  lg:-right-2 h-full">
               <div className="flex flex-col gap-3 lg:gap-4">
-                {["JavaScript", "TypeScript", "React", "Next.js"].map(
+                {["TypeScript", "React", "Next.js"].map(
                   (tech) => (
                     <span
                       key={tech}
@@ -126,7 +125,7 @@ export const BentoGridItem = ({
               </div>
               <div className="flex flex-col gap-3 lg:gap-4">
                 <span className="py-4 px-3 rounded-lg text-center bg-[#10132e]" />
-                {["PHP", "MySQL", "Gsap", "Python"].map((tech) => (
+                {["Tailwind", "Php", "MySQL"].map((tech) => (
                   <span
                     key={tech}
                     className="py-2 lg:py-4 lg:px-3 px-3 text-xs lg:text-base opacity-50 lg:opacity-100 rounded-lg text-center bg-[#10132e]"
