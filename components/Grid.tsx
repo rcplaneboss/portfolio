@@ -1,9 +1,11 @@
 import { gridItems } from "@/data";
 import { BentoGrid, BentoGridItem } from "./ui/BentoGrid";
+import { Element } from "react-scroll";
 
 const Grid = () => {
   return (
-    <section id="work">
+    // <Element name='about'>
+    <section id='about'>
       <BentoGrid className="mt-10">
         {gridItems.map(({id, title, description, className, img, imgClassName, titleClassName, spareImg}) => (
           <BentoGridItem
@@ -20,6 +22,7 @@ const Grid = () => {
         ))}
       </BentoGrid>
     </section>
+    // </Element>
   );
 };
 

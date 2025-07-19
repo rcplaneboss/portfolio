@@ -1,13 +1,16 @@
 import { projects } from "@/data";
 import {PinContainer} from "/components/ui/3d-pin"
 import { FaLocationArrow } from "react-icons/fa";
+import { Element } from "react-scroll";
+
 const RecentProjects = () => {
   return (
-    <section id="recent-projects" className="py-20 relative top-0 left-0">
+    // <Element name='projects'>
+    <section id="projects" className="py-20 relative top-0 left-0">
       <h1 className="heading">
         A small selection of my {" "} 
         <span className="text-purple">recent projects</span>
-     </h1>
+      </h1>
           <div className="flex flex-wrap items-center justify-center p-4 gap-x-2 gap-y-0  mt-10">
               {projects.map(({id , title, link, img, des, iconLists,}) => (
                   <div key={id} className="lg:min-h-[32rem] sm:h-[41rem] h-[32rem] sm:w-[570px] flex items-center justify-center w-[80vw]">
@@ -42,6 +45,7 @@ const RecentProjects = () => {
               ))}
           </div>
     </section>
+    // </Element>
   );  
 };
 
