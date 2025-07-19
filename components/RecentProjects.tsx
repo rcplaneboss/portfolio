@@ -8,7 +8,7 @@ const RecentProjects = () => {
         A small selection of my {" "} 
         <span className="text-purple">recent projects</span>
      </h1>
-          <div className="flex flex-wrap items-center justify-center p-4 gap-x-12 gap-y-8  mt-10">
+          <div className="flex flex-wrap items-center justify-center p-4 gap-x-10 gap-y-8  mt-10">
               {projects.map(({id , title, link, img, des, iconLists,}) => (
                   <div key={id} className="lg:min-h-[32rem] sm:h-[41rem] h-[32rem] sm:w-[570px] not-first:flex items-center justify-center w-[80vw]">
                     <PinContainer title={link} href={link}>
