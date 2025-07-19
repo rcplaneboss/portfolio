@@ -8,9 +8,9 @@ const RecentProjects = () => {
         A small selection of my {" "} 
         <span className="text-purple">recent projects</span>
      </h1>
-          <div className="flex flex-wrap items-center justify-center p-4 gap-x-10 gap-y-8  mt-10">
+          <div className="flex flex-wrap items-center justify-center p-4 gap-x-2 gap-y-0  mt-10">
               {projects.map(({id , title, link, img, des, iconLists,}) => (
-                  <div key={id} className="lg:min-h-[32rem] sm:h-[41rem] h-[32rem] sm:w-[570px] not-first:flex items-center justify-center w-[80vw]">
+                  <div key={id} className="lg:min-h-[32rem] sm:h-[41rem] h-[32rem] sm:w-[570px] flex items-center justify-center w-[80vw]">
                     <PinContainer title={link} href={link}>
                      <div className="relative flex items-center justify-center sm:w-96 w-[80vw] overflow-hidden h-[20vh] lg:h-[30vh] mb-10">
                       <div className="w-full h-full relative overflow-hidden lg:rounded-3xl bg-[#13162d]">
